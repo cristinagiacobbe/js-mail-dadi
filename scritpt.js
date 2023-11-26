@@ -37,11 +37,10 @@ const userMail = prompt("Inserisci la tua email")
 let i = 0
 for (let i = 0; i < mailList.length; i++) {
     if (userMail == mailList[i]) {        
-        alert("Accesso autorizzato")  ;
+        document.getElementById("text").innerHTML= "Accesso autorizzato"
         break;     
     }   else if (i == 4) {
-        alert("Accesso negato")
-    }
-        
+        document.getElementById("text").innerHTML= "Accesso negato"
+    }        
     }
 

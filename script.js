@@ -58,7 +58,7 @@ if (user_random < pc_random) {
    document.getElementById("text_dice").innerHTML= "Il computer ha vinto" ;
 } else if (user_random > pc_random) {
     document.getElementById("text_dice").innerHTML= "Hai vinto!" ;
+} else if (user_random == pc_random) {
+    document.getElementById("text_dice").innerHTML= "Pareggio" ;
 }
-
-
 

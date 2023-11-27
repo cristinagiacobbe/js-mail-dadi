@@ -39,7 +39,7 @@ for (let i = 0; i < mailList.length; i++) {
     if (userMail == mailList[i]) {        
         document.getElementById("text_mail").innerHTML= "Accesso autorizzato"
         break;     
-    }   else if (i == 4) {
+    }   else if (i == mailList.length - 1) {
         document.getElementById("text_mail").innerHTML= "Accesso negato"
     }        
     }

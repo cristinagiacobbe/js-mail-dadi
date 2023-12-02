@@ -44,7 +44,7 @@ for (let i = 0; i < mailList.length; i++) {
     }
 } */
 
-let check = false
+/* let check = false
 for (let i = 0; (i < mailList.length && check == false); i++) {
     if (userMail == mailList[i]) {
         check = true
@@ -52,4 +52,18 @@ for (let i = 0; (i < mailList.length && check == false); i++) {
     } else {
         document.querySelector(".text").innerHTML = ("Accesso negato")
     }
+} */
+
+let check = false
+for (let i = 0; (i < mailList.length && check == false); i++) {
+    if (userMail == mailList[i]) {
+        check = true            
+    }
+}
+
+console.log(check);
+if (check == true) {    
+    document.querySelector(".text").innerHTML = ("Accesso autorizzato")        
+} else {
+    document.querySelector(".text").innerHTML = ("Accesso negato")   
 }
